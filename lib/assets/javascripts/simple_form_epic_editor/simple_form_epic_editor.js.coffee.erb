@@ -1,0 +1,38 @@
+# TODO: Make into plugin and include configuration options
+
+$ ->
+
+  # ---------------------------------------------------------------------
+
+  $('div.epiceditor').each (idx, wrapper) ->
+    e = new EpicEditor(
+      container: wrapper
+      textarea: $(wrapper).find('textarea').get(0)
+      basePath: '/assets'
+      theme: {
+        base: '/simple_form_epic_editor/base.css',
+        preview: '/simple_form_epic_editor/preview.css',
+        editor: '/simple_form_epic_editor/editor.css'
+      }
+      button: false
+    ).load()
+
+    # ---------------------------------------------------------------------
+
+    $toolbar = $(wrapper).siblings('div.toolbar').get(0)
+
+    $('li.toggle_editor', $toolbar).addClass 'active'
+
+    $('li.toggle_preview', $toolbar).on 'click', (event) ->
+      $li = $(event.currentTarget)
+      $li.siblings('li').removeClass 'active'
+      $li.addClass 'active'
+      e.preview()
+
+    $('li.toggle_editor', $toolbar).on 'click', (event) ->
+      $li = $(event.currentTarget)
+      $li.siblings('li').removeClass 'active'
+      $li.addClass 'active'
+      e.edit()
+
+  # ---------------------------------------------------------------------

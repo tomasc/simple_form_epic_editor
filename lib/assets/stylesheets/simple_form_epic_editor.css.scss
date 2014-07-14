@@ -1,0 +1,38 @@
+// TODO: Clean up if possible
+
+div.input.epic_editor {
+  div.toolbar {
+    ul.commands {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 5px;
+      width: 100%;
+
+      li {
+        display: inline-block;
+
+        span {
+          padding: 4px 8px 6px;
+          cursor: pointer;
+          display: inline-block;
+          border: 1px solid transparent;
+        }
+
+        &.active {
+          span {
+            color: rgba(0,0,0,1);
+            border: 1px solid rgba(0,0,0,1);
+            border-bottom: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  div.epiceditor {
+    border: 1px solid rgb(0,0,0);
+    overflow: hidden;
+  }
+}

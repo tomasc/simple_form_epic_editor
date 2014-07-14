@@ -1,16 +1,15 @@
 module SimpleFormEpicEditor
   class Configuration
 
-    # attr_accessor :commands, :parser_rules
+    attr_accessor :commands
+
+    # TODO: Make everything customizable!
 
     def initialize
-      # @parser_rules = 'SimpleFormWysihtml.parserRules'
-      # @commands = [
-      #   { bold: { label: 'B' }, italic: { label: 'I' } },
-      #   { createLink: nil },
-      #   { insertOrderedList: nil, insertUnorderedList: nil },
-      #   { undo: nil, redo: nil }
-      # ]
+      @commands = {
+        toggle_editor: 'Write',
+        toggle_preview: 'Preview'
+      }
     end
 
   end
