@@ -20,7 +20,7 @@ module SimpleFormEpicEditor
 
     # @return [String]
     def input
-      template.content_tag :div, class: %w(epic_editor) do
+      template.content_tag :div, class: %w(epiceditor) do
         # toolbar + text_area
         text_area
       end
