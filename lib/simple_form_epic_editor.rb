@@ -1,7 +1,10 @@
+require "simple_form"
+require "simple_form_epic_editor/engine"
+require "simple_form_epic_editor/configuration"
 require "simple_form_epic_editor/simple_form_epic_editor"
 require "simple_form_epic_editor/version"
 
-require "rails-assets-wysihtml5x"
+require "rails-assets-epiceditor"
 
 # ---------------------------------------------------------------------
 
