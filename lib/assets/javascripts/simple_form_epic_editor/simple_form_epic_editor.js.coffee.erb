@@ -21,11 +21,13 @@ do ($ = jQuery, window, document) ->
     init: ->
       console.log 'init' if @settings.debug
 
+      @get_textarea().hide()
+
       # ---------------------------------------------------------------------
 
       e = new EpicEditor(
         container: @get_editor_wrapper().get(0)
-        textarea: @get_editor_textarea().get(0)
+        textarea: @get_textarea().get(0)
         basePath: '/assets'
         theme: {
           base: "<%= SimpleFormEpicEditor::EpicEditorInput.configuration.theme[:base] %>"
@@ -49,7 +51,7 @@ do ($ = jQuery, window, document) ->
 
     get_editor_wrapper: -> @$element.children('div.editor:first')
     get_editor_toolbar: -> @$element.children('div.toolbar:first')
-    get_editor_textarea: -> @get_editor_wrapper().children('textarea:first')
+    get_textarea: -> @$element.children('textarea:first')
     get_toolbar_ul: -> @get_editor_toolbar().children('ul:first')
     get_toolbar_lis: -> @get_toolbar_ul().children('li')
 
