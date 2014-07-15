@@ -1,5 +1,7 @@
 # Simple Form Epic Editor
 
+[![Gem Version](https://badge.fury.io/rb/simple_form_epic_editor.svg)](http://badge.fury.io/rb/simple_form_epic_editor)
+
 Integrates the markdown editor [Epic Editor](https://github.com/OscarGodson/EpicEditor) with Rails and [Simple Form](https://github.com/plataformatec/simple_form).
 
 This gem adjusts the default theme of [Epic Editor](https://github.com/OscarGodson/EpicEditor) and places the toolbar above the editing field.
