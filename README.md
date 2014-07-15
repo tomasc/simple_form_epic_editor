@@ -2,7 +2,7 @@
 
 Integrates the markdown editor [Epic Editor](https://github.com/OscarGodson/EpicEditor) with Rails and [Simple Form](https://github.com/plataformatec/simple_form).
 
-This gem adjusts the default theme of [EpicEditor](https://github.com/OscarGodson/EpicEditor) and places the toolbar above the editing field.
+This gem adjusts the default theme of [Epic Editor](https://github.com/OscarGodson/EpicEditor) and places the toolbar above the editing field.
 
 ## Installation
 
