@@ -2,6 +2,8 @@
 
 Integrates the markdown editor [Epic Editor](https://github.com/OscarGodson/EpicEditor) with Rails and [Simple Form](https://github.com/plataformatec/simple_form).
 
+This gem adjusts the default theme of [EpicEditor](https://github.com/OscarGodson/EpicEditor) and places the toolbar above the editing field.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -47,7 +49,7 @@ You can change the default button texts in an initializer:
 ```Ruby
 # config/initializers/simple_form_epic_editor.rb
 
-SimpleFormEpicEditor::EpicEditorInput.configure.configure do |c|
+SimpleFormEpicEditor::EpicEditorInput.configure do |c|
   c.commands = [
     @commands = {
       edit: 'Edit',
@@ -59,7 +61,7 @@ end
 
 ### Theme
 
-In your initializer you can assign each stylesheet a new path:
+In the initializer you can assign any or all of the three stylesheets a new path:
 
 ```Ruby
 # config/initializers/simple_form_epic_editor.rb
