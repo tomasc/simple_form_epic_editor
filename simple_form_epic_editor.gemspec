@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleFormEpicEditor::VERSION
   spec.authors       = ["Tomas Celizna"]
   spec.email         = ["tomas.celizna@gmail.com"]
-  spec.summary       = %q{Integrates EpicEditor with simple_form.}
-  spec.description   = %q{Integrates EpicEditor with simple_form.}
+  spec.summary       = %q{Integrates the markdown editor EpicEditor with Rails and Simple Form.}
+  spec.description   = %q{Integrates the markdown editor EpicEditor with Rails and Simple Form.}
   spec.homepage      = "https://github.com/tomasc/simple_form_wysihtml"
   spec.license       = "MIT"
 
