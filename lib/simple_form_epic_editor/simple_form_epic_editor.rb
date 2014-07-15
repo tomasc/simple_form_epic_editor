@@ -32,7 +32,7 @@ module SimpleFormEpicEditor
     end
 
     def editor
-      template.content_tag :div, class: %w(epiceditor) do
+      template.content_tag :div, class: %w(editor) do
         text_area
       end
     end
@@ -59,7 +59,7 @@ module SimpleFormEpicEditor
     end
 
     def command(c, t)
-      template.content_tag :li, class: c do
+      template.content_tag :li, class: c.to_s.underscore.downcase, :"data-toggle" => c.to_s do
         template.content_tag :span, t.to_s
       end
     end
