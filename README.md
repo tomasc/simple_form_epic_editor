@@ -1,6 +1,6 @@
-# SimpleForm EpicEditor
+# Simple Form Epic Editor
 
-Integrates the markdown editor [EpicEditor](https://github.com/OscarGodson/EpicEditor) with Rails and [Simple Form](https://github.com/plataformatec/simple_form).
+Integrates the markdown editor [Epic Editor](https://github.com/OscarGodson/EpicEditor) with Rails and [Simple Form](https://github.com/plataformatec/simple_form).
 
 ## Installation
 
