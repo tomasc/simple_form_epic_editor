@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tomas.celizna@gmail.com"]
   spec.summary       = %q{Integrates the markdown editor EpicEditor with Rails and Simple Form.}
   spec.description   = %q{Integrates the markdown editor EpicEditor with Rails and Simple Form.}
-  spec.homepage      = "https://github.com/tomasc/simple_form_wysihtml"
+  spec.homepage      = "https://github.com/tomasc/simple_form_epic_editor"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
