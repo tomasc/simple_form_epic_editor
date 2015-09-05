@@ -80,10 +80,4 @@ do ($ = jQuery, window, document) ->
 
 # =====================================================================
 
-$ ->
-
-  $('div.epic_editor').simple_form_epic_editor()
-
-  # make sure the plugin is correctly rebound to new elements
-  $('body').on 'dom_update', (e) ->
-    $('div.epic_editor').simple_form_epic_editor()
+$ -> $('div.epic_editor').simple_form_epic_editor()
